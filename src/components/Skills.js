@@ -1,0 +1,27 @@
+// src/components/Skills.js
+
+// Daftar skill untuk ditampilkan
+const skillsList = [
+    { name: "Web Development", icon: "fas fa-code", color: "text-retro-red-orange" },
+    { name: "UI/UX Design", icon: "fas fa-palette", color: "text-retro-purple" },
+    { name: "Frontend", icon: "fas fa-desktop", color: "text-retro-blue" }, // Mengganti emoji dengan ikon
+    { name: "Database", icon: "fas fa-database", color: "text-retro-green" },
+];
+
+export default function Skills() {
+    return (
+        <section id="skills" className="bg-retro-bg py-20 scroll-mt-[88px]">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-retro">My Skills</h2>
+                <div className="grid grid-cols-2 gap-4 md:gap-8">
+                    {skillsList.map((skill) => (
+                        <div key={skill.name} className="bg-white rounded-xl shadow-lg p-4 md:p-6 text-center border-4 border-retro-text hover:transform hover:scale-105 transition duration-300 hover:shadow-[8px_8px_0px_var(--retro-pink)] cursor-pointer">
+                            <i className={`${skill.icon} text-3xl md:text-4xl ${skill.color} mb-2 md:mb-4`}></i>
+                            <h3 className="font-semibold text-retro-text text-base md:text-lg font-retro">{skill.name}</h3>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}

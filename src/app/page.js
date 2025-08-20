@@ -3,10 +3,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-// Import komponen lain yang sudah kamu buat
-// import Skills from "@/components/Skills";
-// import Contact from "@/components/Contact";
-// import Footer from "@/components/Footer";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,10 +14,10 @@ export default function Home() {
       <main>
         <Hero />
         <Projects />
-        {/* <Skills /> */}
-        {/* <Contact /> */}
+        <Skills />
+        <Contact />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
