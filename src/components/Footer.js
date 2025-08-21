@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-        <footer id="footer" className="bg-gradient-to-r from-retro-yellow to-retro-pink text-white py-12 font-retro border-t-4 border-retro-text">
+        <footer id="footer" className="bg-retro-yellow text-white py-12 font-retro border-t-4 border-retro-text">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <p className="text-lg text-retro-text mb-8 md:mb-0 text-center md:text-left">

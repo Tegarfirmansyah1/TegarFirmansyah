@@ -28,10 +28,10 @@ export default function Navbar() {
 
                     {/* Menu untuk Desktop */}
                     <div className="hidden md:flex space-x-8 font-retro text-lg">
-                        <a href="#home" className="text-retro-text hover:text-retro-purple transition duration-300">Home</a>
-                        <a href="#projects" className="text-retro-text hover:text-retro-purple transition duration-300">Projects</a>
-                        <a href="#skills" className="text-retro-text hover:text-retro-purple transition duration-300">Skills</a>
-                        <a href="#contact" className="text-retro-text hover:text-retro-purple transition duration-300">Contact</a>
+                        <a href="#home" className="text-retro-text hover:text-retro-blue transition duration-300">Home</a>
+                        <a href="#projects" className="text-retro-text hover:text-retro-blue transition duration-300">Projects</a>
+                        <a href="#skills" className="text-retro-text hover:text-retro-blue transition duration-300">Skills</a>
+                        <a href="#contact" className="text-retro-text hover:text-retro-blue transition duration-300">Contact</a>
                     </div>
                 </div>
 

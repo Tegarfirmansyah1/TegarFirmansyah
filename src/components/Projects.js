@@ -1,36 +1,7 @@
 // src/components/Projects.js
 import Image from 'next/image';
-
-const projectData = [
-  {
-    imgSrc: "/assets/images/project1.png",
-    title: "E-commerce Platform",
-    description: "A full-stack online shopping platform built with PHP and SQL.",
-    tags: ["PHP", "SQL"],
-    link: "/project1",
-  },
-  {
-    imgSrc: "/assets/images/project2.png",
-    title: "Prototipe Chating Web",
-    description: "Desain UI/UX chatting web built with Figma.",
-    tags: ["Figma", "CorelDraw"],
-    link: "/project2",
-  },
-  {
-    imgSrc: "/assets/images/project3.png",
-    title: "Portfolio Website",
-    description: "Personal portfolio website built with Tailwind CSS and JavaScript.",
-    tags: ["Tailwind CSS", "JavaScript"],
-    link: "/project3",
-  },
-  {
-    imgSrc: "/assets/images/project4.png",
-    title: "Shortened URL",
-    description: "Shortened URL website built with Tailwind CSS and FullStack Next js.",
-    tags: ["Tailwind CSS", "Next js"],
-    link: "/project4",
-  },
-];
+import Link from 'next/link'; 
+import { projectData } from '@/data/projectData';
 
 export default function Projects() {
     return (
@@ -51,7 +22,9 @@ export default function Projects() {
                                         <span key={tag} className="px-3 py-1 bg-retro-yellow text-retro-text rounded-full text-xs md:text-sm font-retro border-2 border-retro-text">{tag}</span>
                                     ))}
                                 </div>
-                                <a href={project.link} className="block mt-5 text-center bg-retro-red-orange text-white py-2 rounded-md hover:bg-retro-purple text-sm font-retro border-2 border-retro-text" target="_blank" rel="noopener noreferrer">View Project</a>
+                                <Link href={`/project/${project.slug}`} className="block mt-5 text-center bg-retro-red-orange text-white py-2 rounded-md hover:bg-retro-blue text-sm font-retro border-2 border-retro-text">
+                                    Detail
+                                </Link>
                             </div>
                         </div>
                     ))}
