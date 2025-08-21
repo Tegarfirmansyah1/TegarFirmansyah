@@ -9,22 +9,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // Di sini kita menambahkan palet warna retro kita
-      colors: {
-        'retro-yellow': '#FFC567',
-        'retro-pink': '#FB7DA8',
-        'retro-red-orange': '#FD5A46',
-        'retro-purple': '#552CB7',
-        'retro-green': '#00995E',
-        'retro-blue': '#058CD7',
-        'retro-bg': '#f0e6d2',      // Warna latar belakang krem
-        'retro-text': '#2c2c2c',   // Warna teks gelap
-      },
-      // Di sini kita menambahkan font retro kita
       fontFamily: {
         'retro': ['VT323', 'monospace'],
       },
+      // Di sini kita memberitahu Tailwind untuk menggunakan variabel CSS kita
+     colors: {
+        // Ganti nama di sini agar cocok dengan nama variabel CSS
+        'primary': 'var(--color-primary)',
+        'secondary': 'var(--color-secondary)',
+        'accent': 'var(--color-accent)',
+        'background': 'var(--color-background)',
+        'text': 'var(--color-text)',
+        'success': 'var(--color-success)',
+        'info': 'var(--color-info)',
+        'white': 'var(--color-white)',
+        'black': 'var(--color-black)',
+        'hover': 'var(--color-hover)', 
+      },
     },
   },
-  plugins: [],
+  // Plugin 'tailwindcss-themer' sudah tidak dibutuhkan lagi
+  plugins: [], 
 };

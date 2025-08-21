@@ -1,7 +1,7 @@
 // src/app/layout.js
 import { Inter } from "next/font/google";
+import ThemeProvider from '@/components/ThemeProvider';
 import "./globals.css";
-// Import Font Awesome
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +23,11 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Custom font VT323 is now loaded in _document.js */}
       </head>
-      <body className={`${inter.className} bg-retro-bg font-retro`}>{children}</body>
+      <body>
+        <ThemeProvider> {/* Bungkus children dengan ThemeProvider */}
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
