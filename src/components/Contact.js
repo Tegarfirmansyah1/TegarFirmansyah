@@ -27,7 +27,11 @@ export default function Contact() {
                         </div>
                         <button 
                             type="submit"
+<<<<<<< HEAD
                             className="w-full bg-secondary text-text px-8 py-3 rounded-lg hover:bg-opacity-90 transition duration-300 font-retro border-2 border-text shadow-[5px_5px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 text-xl"
+=======
+                            className="w-full bg-retro-red-orange text-retro-bg px-8 py-3 rounded-lg hover:bg-opacity-90 transition duration-300 font-retro border-2 border-retro-text shadow-[5px_5px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 text-xl"
+>>>>>>> ba5c59676793329e322612015678781b451001f5
                         >
                             Send Message
                         </button>

@@ -29,11 +29,18 @@ export default function Navbar() {
 
                     {/* Menu untuk Desktop */}
                     <div className="hidden md:flex space-x-8 font-retro text-lg">
+<<<<<<< HEAD
                         <a href="#home" className="text-text hover:text-hover transition duration-300">Home</a>
                         <a href="#projects" className="text-text hover:text-hover transition duration-300">Projects</a>
                         <a href="#skills" className="text-text hover:text-hover transition duration-300">Skills</a>
                         <a href="#contact" className="text-text hover:text-hover transition duration-300">Contact</a>
                             <ThemeSwitcher />
+=======
+                        <a href="#home" className="text-retro-text hover:text-retro-blue transition duration-300">Home</a>
+                        <a href="#projects" className="text-retro-text hover:text-retro-blue transition duration-300">Projects</a>
+                        <a href="#skills" className="text-retro-text hover:text-retro-blue transition duration-300">Skills</a>
+                        <a href="#contact" className="text-retro-text hover:text-retro-blue transition duration-300">Contact</a>
+>>>>>>> ba5c59676793329e322612015678781b451001f5
                     </div>
                 </div>
 

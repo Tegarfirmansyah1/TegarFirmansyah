@@ -22,7 +22,11 @@ export default function Projects() {
                                         <span key={tag} className="px-3 py-1 bg-accent text-text rounded-full text-xs md:text-sm font-retro border-2 border-text">{tag}</span>
                                     ))}
                                 </div>
+<<<<<<< HEAD
                                 <Link href={`/project/${project.slug}`} className="block mt-5 text-center bg-secondary text-text py-2 rounded-md hover:bg-blue text-sm font-retro border-2 border-text font-bold">
+=======
+                                <Link href={`/project/${project.slug}`} className="block mt-5 text-center bg-retro-red-orange text-white py-2 rounded-md hover:bg-retro-blue text-sm font-retro border-2 border-retro-text">
+>>>>>>> ba5c59676793329e322612015678781b451001f5
                                     Detail
                                 </Link>
                             </div>
