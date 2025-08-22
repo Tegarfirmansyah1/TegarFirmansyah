@@ -1,17 +1,14 @@
-// app/project/[slug]/page.js
+
 
 import { projectData } from "@/data/projectData";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ProjectDetailPage({ params }) {
-    // Mengambil 'slug' dari URL, contoh: "ecommerce-platform"
     const { slug } = params;
     
-    // Mencari data proyek yang cocok di dalam array projectData
     const project = projectData.find(p => p.slug === slug);
 
-    // Jika proyek tidak ditemukan, tampilkan pesan
     if (!project) {
         return (
             <div className="bg-retro-bg min-h-screen flex items-center justify-center">
@@ -24,75 +21,33 @@ export default function ProjectDetailPage({ params }) {
         );
     }
 
-    // Jika proyek ditemukan, tampilkan halamannya
     return (
-<<<<<<< HEAD
         <div className="bg-background min-h-screen pt-28 font-retro">
             <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="bg-white p-6 md:p-8 rounded-xl border-4 border-text shadow-lg">
-                    {/* Tombol Kembali */}
                     <Link href="/#projects" className="text-accent hover:underline mb-6 inline-block">
-=======
-        <div className="bg-retro-bg min-h-screen pt-28 font-retro">
-            <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="bg-white p-6 md:p-8 rounded-xl border-4 border-retro-text shadow-lg">
-                    {/* Tombol Kembali */}
-                    <Link href="/#projects" className="text-retro-purple hover:underline mb-6 inline-block">
->>>>>>> ba5c59676793329e322612015678781b451001f5
                         &larr; Back
                     </Link>
 
-                    {/* Judul Proyek */}
-<<<<<<< HEAD
                     <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">{project.title}</h1>
 
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2 mb-6">
                         {project.tags.map(tag => (
                             <span key={tag} className="px-3 py-1 bg-secondary text-text rounded-full text-sm border-2 border-text">{tag}</span>
-=======
-                    <h1 className="text-3xl md:text-4xl font-bold text-retro-green mb-4">{project.title}</h1>
-                    
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tags.map(tag => (
-                            <span key={tag} className="px-3 py-1 bg-retro-yellow text-retro-text rounded-full text-sm border-2 border-retro-text">{tag}</span>
->>>>>>> ba5c59676793329e322612015678781b451001f5
                         ))}
                     </div>
 
-                    {/* Gambar Utama */}
-<<<<<<< HEAD
                     <Image src={project.imgSrc} alt={project.title} width={800} height={450} className="rounded-lg border-2 border-text w-full object-cover mb-6" />
 
-                    {/* Deskripsi Panjang */}
                     <h2 className="text-2xl font-bold text-black mb-2">Tentang Proyek</h2>
                     <p className="text-black text-lg mb-6">{project.longDescription}</p>
 
-                    {/* Tantangan & Solusi */}
                     <h2 className="text-2xl font-bold text-black mb-2">Tantangan & Solusi</h2>
                     <p className="text-black text-lg mb-8">{project.challenges}</p>
                     
-                    {/* Tombol Aksi */}
                     <div className="flex flex-col md:flex-row gap-4">
                         <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-center bg-success text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Live Demo</a>
                         <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="text-center bg-accent text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Source Code</a>
-=======
-                    <Image src={project.imgSrc} alt={project.title} width={800} height={450} className="rounded-lg border-2 border-retro-text w-full object-cover mb-6" />
-
-                    {/* Deskripsi Panjang */}
-                    <h2 className="text-2xl font-bold text-retro-text mb-2">Tentang Proyek</h2>
-                    <p className="text-retro-text text-lg mb-6">{project.longDescription}</p>
-
-                    {/* Tantangan & Solusi */}
-                    <h2 className="text-2xl font-bold text-retro-text mb-2">Tantangan & Solusi</h2>
-                    <p className="text-retro-text text-lg mb-8">{project.challenges}</p>
-                    
-                    {/* Tombol Aksi */}
-                    <div className="flex flex-col md:flex-row gap-4">
-                        <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-center bg-retro-blue text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Live Demo</a>
-                        <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="text-center bg-retro-red-orange text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Source Code</a>
->>>>>>> ba5c59676793329e322612015678781b451001f5
                     </div>
                 </div>
             </main>

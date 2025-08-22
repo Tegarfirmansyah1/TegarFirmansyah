@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import Image from 'next/image';
 import Link from 'next/link'; 
 import { projectData } from '@/data/projectData';
@@ -7,13 +6,11 @@ export default function Projects() {
     return (
         <section id="projects" className="py-20 bg-bg scroll-mt-[68px]">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Ukuran font disesuaikan */}
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-retro">My Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projectData.map((project, index) => (
                         <div key={index} className="bg-gray-200 rounded-xl shadow-lg overflow-hidden border-4 border-text hover:transform hover:scale-105 transition duration-300 hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
                             <Image className="w-full p-2 h-48 md:h-56 object-cover rounded-xl" src={project.imgSrc} alt={project.title} width={500} height={300} />
-                            {/* Padding dan ukuran font di dalam kartu disesuaikan */}
                             <div className="p-4 md:p-6">
                                 <h3 className="text-lg md:text-xl font-semibold text-black mb-2 font-retro">{project.title}</h3>
                                 <p className="text-sm md:text-base text-black mb-4 font-retro">{project.description}</p>
@@ -22,11 +19,7 @@ export default function Projects() {
                                         <span key={tag} className="px-3 py-1 bg-accent text-text rounded-full text-xs md:text-sm font-retro border-2 border-text">{tag}</span>
                                     ))}
                                 </div>
-<<<<<<< HEAD
                                 <Link href={`/project/${project.slug}`} className="block mt-5 text-center bg-secondary text-text py-2 rounded-md hover:bg-blue text-sm font-retro border-2 border-text font-bold">
-=======
-                                <Link href={`/project/${project.slug}`} className="block mt-5 text-center bg-retro-red-orange text-white py-2 rounded-md hover:bg-retro-blue text-sm font-retro border-2 border-retro-text">
->>>>>>> ba5c59676793329e322612015678781b451001f5
                                     Detail
                                 </Link>
                             </div>

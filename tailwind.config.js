@@ -1,4 +1,3 @@
-// tailwind.config.js
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -12,9 +11,7 @@ module.exports = {
       fontFamily: {
         'retro': ['VT323', 'monospace'],
       },
-      // Di sini kita memberitahu Tailwind untuk menggunakan variabel CSS kita
      colors: {
-        // Ganti nama di sini agar cocok dengan nama variabel CSS
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
         'accent': 'var(--color-accent)',
@@ -28,6 +25,5 @@ module.exports = {
       },
     },
   },
-  // Plugin 'tailwindcss-themer' sudah tidak dibutuhkan lagi
   plugins: [], 
 };

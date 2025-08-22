@@ -1,11 +1,10 @@
-/* src/app/page.module.css */
 
 .main {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
   border: 4px solid var(--text-color);
-  box-shadow: 8px 8px 0px var(--retro-purple); /* Efek bayangan retro */
+  box-shadow: 8px 8px 0px var(--background); 
 }
 
 .header {
@@ -45,7 +44,7 @@
 
 .projectCard:hover {
   transform: translate(-5px, -5px);
-  box-shadow: 5px 5px 0px var(--retro-pink); /* Bayangan saat hover */
+  box-shadow: 5px 5px 0px var(--retro-pink); 
 }
 
 .projectCard h3 {

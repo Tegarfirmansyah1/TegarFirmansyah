@@ -1,6 +1,3 @@
-// src/components/Skills.js
-
-// Daftar skill untuk ditampilkan
 const skillsList = [
     { name: "Web Development", icon: "fas fa-code", color: "text-accent" },
     { name: "UI/UX Design", icon: "fas fa-palette", color: "text-info" },

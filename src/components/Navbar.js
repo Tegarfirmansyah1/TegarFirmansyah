@@ -1,12 +1,10 @@
-// src/components/Navbar.js
 
-"use client"; // Wajib ditambahkan untuk menggunakan hooks seperti useState
+"use client"; 
 
 import { useState } from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navbar() {
-    // 1. Membuat state untuk melacak status menu (terbuka/tertutup)
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -15,10 +13,8 @@ export default function Navbar() {
                 <div className="flex justify-between items-center py-5">
                     <span className="text-2xl font-bold text-text font-retro">Portofolio</span>
                     
-                    {/* Tombol Hamburger untuk Mobile */}
                     <div className="md:hidden">
                         <button onClick={() => setIsOpen(!isOpen)} className="text-text focus:outline-none">
-                            {/* Ikon hamburger atau 'X' tergantung state isOpen */}
                             {isOpen ? (
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                             ) : (
@@ -27,25 +23,14 @@ export default function Navbar() {
                         </button>
                     </div>
 
-                    {/* Menu untuk Desktop */}
                     <div className="hidden md:flex space-x-8 font-retro text-lg">
-<<<<<<< HEAD
                         <a href="#home" className="text-text hover:text-hover transition duration-300">Home</a>
                         <a href="#projects" className="text-text hover:text-hover transition duration-300">Projects</a>
                         <a href="#skills" className="text-text hover:text-hover transition duration-300">Skills</a>
                         <a href="#contact" className="text-text hover:text-hover transition duration-300">Contact</a>
                             <ThemeSwitcher />
-=======
-                        <a href="#home" className="text-retro-text hover:text-retro-blue transition duration-300">Home</a>
-                        <a href="#projects" className="text-retro-text hover:text-retro-blue transition duration-300">Projects</a>
-                        <a href="#skills" className="text-retro-text hover:text-retro-blue transition duration-300">Skills</a>
-                        <a href="#contact" className="text-retro-text hover:text-retro-blue transition duration-300">Contact</a>
->>>>>>> ba5c59676793329e322612015678781b451001f5
                     </div>
                 </div>
-
-                {/* Dropdown Menu untuk Mobile */}
-                {/* Kelas 'block' atau 'hidden' akan diterapkan berdasarkan state 'isOpen' */}
                 <div className={`${isOpen ? 'block' : 'hidden'} md:hidden pb-4`}>
                     <a href="#home" onClick={() => setIsOpen(false)} className="block py-2 text-center text-text hover:bg-blue transition duration-300 rounded">Home</a>
                     <a href="#projects" onClick={() => setIsOpen(false)} className="block py-2 text-center text-text hover:bg-blue transition duration-300 rounded">Projects</a>
