@@ -46,7 +46,7 @@ export default function ProjectDetailPage({ params }) {
                     <p className="text-black text-lg mb-8">{project.challenges}</p>
                     
                     <div className="flex flex-col md:flex-row gap-4">
-                        <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-center bg-success text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Live Demo</a>
+                        <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-center bg-success text-white py-3 px-6 rounded-md text-sm md:text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Live Demo</a>
                     </div>
                 </div>
             </main>

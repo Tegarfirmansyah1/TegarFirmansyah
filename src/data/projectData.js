@@ -26,7 +26,7 @@ export const projectData = [
     title: "Portfolio Website",
     description: "Personal portfolio website built with Tailwind CSS and JavaScript.",
     longDescription: "Website ini adalah yang sedang Anda lihat sekarang! Dibangun menggunakan Next.js untuk performa server-side rendering dan di-styling dengan Tailwind CSS untuk pengembangan UI yang cepat. Tujuannya adalah untuk menciptakan portofolio yang cepat, responsif, dan menarik secara visual.",
-    challenges: "Mengimplementasikan 'smooth scroll' yang akurat dengan offset untuk fixed navbar adalah tantangan kecil. Ini diselesaikan dengan menggunakan properti CSS 'scroll-margin-top' pada setiap section, sebuah solusi modern tanpa memerlukan JavaScript.",
+    challenges: "Tantangan utamanya adalah merancang arsitektur yang memungkinkan pergantian tema secara live. Solusinya adalah dengan memanfaatkan React Context untuk manajemen state global, dan CSS Variables yang terhubung ke Tailwind CSS untuk palet warna dinamis.",
     tags: ["Next.js", "React", "Tailwind CSS"],
     liveDemo: "https://tegar-firmansyah.vercel.app",
   },
@@ -36,8 +36,7 @@ export const projectData = [
     title: "Shortened URL",
     description: "Shortened URL website built with Tailwind CSS and FullStack Next js.",
     longDescription: "Aplikasi ini memungkinkan pengguna untuk memendekkan URL yang panjang menjadi link yang lebih singkat dan mudah dibagikan. Dibangun secara full-stack dengan Next.js, aplikasi ini menangani request di sisi server, berinteraksi dengan database untuk menyimpan URL asli dan yang dipendekkan, serta menyediakan antarmuka yang bersih di sisi klien.",
-    challenges: "Membangun logika untuk menghasilkan hash URL yang unik dan singkat secara konsisten. Saya mengatasinya dengan menggunakan algoritma hashing sederhana dan memastikan tidak ada kolisi di database sebelum menyimpan link baru.",
-    tags: ["Next.js", "Full-Stack", "Tailwind CSS"],
+    challenges: "Tantangan utamanya adalah membangun sistem full-stack yang kompleks. Ini mencakup pembuatan REST API untuk logika autentikasi pengguna, validasi slug kustom secara real-time untuk mencegah duplikasi, dan merancang skema database untuk menyimpan data URL serta melacak jumlah klik. Di sisi backend, saya juga mengimplementasikan logika untuk mengatur masa aktif tautan (URL expiry).",tags: ["Next.js", "Full-Stack", "Tailwind CSS"],
     liveDemo: "https://5ort.vercel.app",
   }
 ];

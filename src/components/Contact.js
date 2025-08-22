@@ -103,7 +103,7 @@ export default function Contact() {
                         <button 
                             type="submit"
                             disabled={status.submitting}
-                            className="w-full bg-primary text-text px-8 py-3 rounded-lg hover:bg-secondary transition duration-300 font-retro border-2 border-text shadow-[5px_5px_0px_theme(colors.text)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 text-xl disabled:bg-gray-400 disabled:cursor-not-allowed" 
+                            className="w-full bg-primary text-text px-8 py-3 rounded-lg hover:bg-secondary transition duration-300 font-retro border-2 border-text shadow-[5px_5px_0px_theme(colors.text)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 text-sm md:text-lg disabled:bg-gray-400 disabled:cursor-not-allowed" 
                         >
                             {status.submitting ? 'Mengirim...' : 'Send Message'}
                         </button>

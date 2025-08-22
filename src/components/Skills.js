@@ -14,7 +14,7 @@ export default function Skills() {
                     {skillsList.map((skill) => (
                         <div key={skill.name} className="bg-white rounded-xl shadow-lg p-4 md:p-6 text-center border-4 border-text hover:transform hover:scale-105 transition duration-300 hover:shadow-[8px_8px_0px_var(--retro-pink)] cursor-pointer">
                             <i className={`${skill.icon} text-3xl md:text-4xl ${skill.color} mb-2 md:mb-4`}></i>
-                            <h3 className="font-semibold text-black text-base md:text-lg font-retro">{skill.name}</h3>
+                            <h3 className="font-semibold text-black text-sm md:text-lg font-retro">{skill.name}</h3>
                         </div>
                     ))}
                 </div>
