@@ -51,13 +51,13 @@ export default function Contact() {
 
     if (status.succeeded) {
         return (
-            <section id="contact" className="bg-background py-20 scroll-mt-[88px]">
+            <section id="contact" className="bg-background py-20 scroll-mt-[150px]">
                 <div className="max-w-xl mx-auto px-4 text-center">
                     
-                    <div className="bg-background/50 p-8 rounded-xl border-4 border-text shadow-lg min-h-[520px] flex flex-col justify-center items-center">
+                    <div className="bg-background/50 p-8 rounded-xl border-4 border-text shadow-lg min-h-[420px] flex flex-col justify-center items-center">
                         <h3 className="text-3xl md:text-4xl font-bold mb-4 font-retro text-text">Terima Kasih!</h3>
                         <p className="text-lg text-text font-retro">Pesanmu sudah terkirim. Saya akan segera membalasnya.</p>
-                        <p className="text-5xl mt-6">🎉</p> 
+                        <p className="text-9xl mt-6">🎉</p> 
                     </div>
                 </div>
             </section>

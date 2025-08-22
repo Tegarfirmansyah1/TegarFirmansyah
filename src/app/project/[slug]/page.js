@@ -47,7 +47,6 @@ export default function ProjectDetailPage({ params }) {
                     
                     <div className="flex flex-col md:flex-row gap-4">
                         <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-center bg-success text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Live Demo</a>
-                        <a href={project.sourceCode} target="_blank" rel="noopener noreferrer" className="text-center bg-accent text-white py-3 px-6 rounded-md text-lg border-2 border-retro-text hover:bg-retro-purple transition-colors">Lihat Source Code</a>
                     </div>
                 </div>
             </main>
