@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Tegar Firmansyah | Full-Stack Web Developer",
   description: "Portofolio pribadi Tegar Firmansyah, seorang web developer yang berfokus pada Next.js, React, dan Tailwind CSS. Lihat proyek-proyek terbaru saya di sini.",
+verification: {
+    google: 'google-site-verification=R3GN-BsplYV8MCbilcu5gQF3tnpdQyyKJdVSnnIcdWU', 
+  },
 };
 
 
