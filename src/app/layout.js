@@ -10,7 +10,7 @@ export const metadata = {
   title: "Tegar Firmansyah | Full-Stack Web Developer",
   description: "Portofolio pribadi Tegar Firmansyah, seorang web developer yang berfokus pada Next.js, React, dan Tailwind CSS. Lihat proyek-proyek terbaru saya di sini.",
 verification: {
-    google: 'R3GN-BsplYV8MCbilcu5gQF3tnpdQyyKJdVSnnIcdWU', 
+    google: 'BAdKHHR56G4z4xt0qZA7cjEjdBFv1BZdyWXB039gQms', 
   },
 };
 
