@@ -8,18 +8,15 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    // eslint-disable-next-line react/jsx-no-undef
-    <><Head>
-      <meta name="google-site-verification" content="google-site-verification=R3GN-BsplYV8MCbilcu5gQF3tnpdQyyKJdVSnnIcdWU" />
-    </Head><div>
-        <Nav />
-        <main>
-          <Hero />
-          <Projects />
-          <Skills />
-          <Contact />
-        </main>
-        <Footer />
-      </div></>
+    <div>
+      <Nav />
+      <main>
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
